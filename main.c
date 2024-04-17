@@ -23,6 +23,10 @@ void print_usage(const char *argv0)
 
 int main(int argc, char *argv[])
 {
+    if (argc < 2) {
+        print_usage(argv[0]);
+    }
+
     /**
      * Total number of columns to read from the CSV file. Can be less than the
      * actual number of columns in the CSV file but no more.
