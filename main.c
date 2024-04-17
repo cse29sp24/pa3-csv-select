@@ -37,13 +37,13 @@ int main(int argc, char *argv[])
      * Total number of rows to read and process from the CSV file. If set to -1,
      * then process all rows from the CSV file (no limit). Default value is -1.
     */
-    int nrows = -1;
+    int nrecs = -1;
 
     /* Process command line arguments using `getopt` */
     int c;
     while ((c = getopt(argc, argv, "n:c:")) != -1) {
         // TODO: Write the switch-case statement to fill in 
-        // the `ncols` and `nrows` variables.
+        // the `ncols` and `nrecs` variables.
     }
 
     if (ncols < 0) {
