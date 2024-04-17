@@ -15,5 +15,9 @@
 int parse(char *line, int ncols, char *values[])
 {
     // TODO: Implement this function 
+    
+    // Do NOT use an index to traverse `line`! You will not
+    // receive any points if you do so.
+
     return 0;
 }

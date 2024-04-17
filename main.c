@@ -14,7 +14,6 @@
 
 /* Error message strings (to be used by various fprintf calls) */
 #define INVALID_SYNTAX_MSG "Invalid syntax at line %d.\n"
-#define INVALID_COL_MSG "Invalid column index %d.\n"
 
 void print_usage(const char *argv0)
 {
@@ -75,7 +74,7 @@ int main(int argc, char *argv[])
     while (fgets(line, MAX_LINE_LEN, stdin)) {
         // TODO: Call the parse() function and process the input
         // line by line. If parse() returns -1, terminate processing
-        // and print error message.
+        // and print error message (INVALID_SYNTAX_MSG).
     }
 
     return EXIT_SUCCESS;
